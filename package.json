@@ -1,0 +1,9 @@
+{
+  "name": "graphql-crud-getty",
+  "version": "1.0.0",
+  "description": "crud with graphql getty.io",
+  "main": "index.js",
+  "repository": "git@github.com:maverickanp/graphql-crud-getty.git",
+  "author": "Artur Pedrosa <maverickanp@gmail.com>",
+  "license": "MIT"
+}
