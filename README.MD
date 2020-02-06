@@ -96,6 +96,21 @@ mutation {
 
 # -----------------------------------------
 
+**Check if you have .env on your project
+
+# docker tips
+checking your local images from docker
+```
+docker images
+```
+
+running command to start your local instance
+```
+docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no mongodb
+```
+
+## Commands 🚀
+
 ```yarn build : send command "babel src --out-dir dist" -> to transpile project files to dist folder```
 
 ```yarn start : send command "node dist/index.js"-> runs the project from dist folder```
