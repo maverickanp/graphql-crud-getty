@@ -5,5 +5,26 @@
   "main": "index.js",
   "repository": "git@github.com:maverickanp/graphql-crud-getty.git",
   "author": "Artur Pedrosa <maverickanp@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "apollo-engine": "^1.1.2",
+    "apollo-server-express": "^2.9.16",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "graphql-compose": "^7.10.0",
+    "graphql-compose-connection": "^6.0.3",
+    "graphql-compose-mongoose": "^7.3.3",
+    "graphql-middleware": "^4.0.2",
+    "graphql-tools": "^4.0.6",
+    "mongoose": "^5.8.11",
+    "mongoose-bcrypt": "^1.6.0",
+    "mongoose-timestamp": "^0.6.0"
+  }
 }
