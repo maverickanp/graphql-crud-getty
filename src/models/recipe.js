@@ -3,23 +3,23 @@ import timestamps from 'mongoose-timestamp';
 import { composeWithMongoose } from 'graphql-compose-mongoose';
 
 export const RecipeSchema = new Schema(
-    {
-        name: {
-            type: String,
-            required: true,
-        },
-        category: {
-            type: String,
-            required: true,
-        },
-        description: {
-            type: String,
-            required: true,
-        }
+  {
+    name: {
+      type: String,
+      required: true,
     },
-    {
-        collection: 'recipes',
-    }
+    category: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+  },
+  {
+    collection: 'recipes',
+  }
 );
 
 RecipeSchema.plugin(timestamps);
