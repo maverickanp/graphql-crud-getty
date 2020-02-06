@@ -4,12 +4,13 @@
   "description": "crud with graphql getty.io",
   "main": "index.js",
   "repository": "git@github.com:maverickanp/graphql-crud-getty.git",
-  "author": "Artur Pedrosa <maverickanp@gmail.com>",
+  "author": "Artur Pedrosa <apedrosa.dev@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir dist",
     "start": "node dist/index.js",
     "dev": "nodemon --exec npx babel-node src/index.js",
+    "postinstall": "rm -rf dist && yarn run build",
     "prettier": "prettier --config ./.prettierrc --write \"**/*.js\"",
     "lint": "yarn prettier --write --check --config ./.prettierrc \"**/*.js\" && eslint --fix ./src",
     "test": "mocha test/*.test.ts",
@@ -34,7 +35,8 @@
     "graphql-tools": "^4.0.6",
     "mongoose": "^5.8.11",
     "mongoose-bcrypt": "^1.6.0",
-    "mongoose-timestamp": "^0.6.0"
+    "mongoose-timestamp": "^0.6.0",
+    "fs-extra": "^8.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -46,7 +48,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-    "fs-extra": "^8.1.0",
+  
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1"
   }
