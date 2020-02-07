@@ -1,9 +1,9 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
 
-dotenv.config();
+dotenv.config()
 
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise
 
 const connection = mongoose.connect(process.env.MONGODB_URI, {
   autoIndex: true,
@@ -12,15 +12,15 @@ const connection = mongoose.connect(process.env.MONGODB_URI, {
   keepAlive: 120,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
-});
+  useFindAndModify: false
+})
 
-mongoose.set('useCreateIndex', true);
+mongoose.set('useCreateIndex', true)
 
 connection
   .then((db) => db)
   .catch((err) => {
-    console.log(`Eitcha! ${err}`);
-  });
+    console.log(`Eitcha! ${err}`)
+  })
 
-export default connection;
+export default connection

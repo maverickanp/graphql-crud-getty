@@ -1,17 +1,15 @@
-import { SchemaComposer } from 'graphql-compose';
+import { SchemaComposer } from 'graphql-compose'
 
-import db from '../utils/db';
+import { RecipeQuery, RecipeMutation } from './recipe'
 
-import { RecipeQuery, RecipeMutation } from './recipe';
-
-const schemaComposer = new SchemaComposer();
+const schemaComposer = new SchemaComposer()
 
 schemaComposer.Query.addFields({
-  ...RecipeQuery,
-});
+  ...RecipeQuery
+})
 
 schemaComposer.Mutation.addFields({
-  ...RecipeMutation,
-});
+  ...RecipeMutation
+})
 
-export default schemaComposer.buildSchema();
+export default schemaComposer.buildSchema()

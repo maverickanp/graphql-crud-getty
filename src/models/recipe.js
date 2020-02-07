@@ -1,30 +1,30 @@
-import mongoose, { Schema } from 'mongoose';
-import timestamps from 'mongoose-timestamp';
-import { composeWithMongoose } from 'graphql-compose-mongoose';
+import mongoose, { Schema } from 'mongoose'
+import timestamps from 'mongoose-timestamp'
+import { composeWithMongoose } from 'graphql-compose-mongoose'
 
 export const RecipeSchema = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     category: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   {
-    collection: 'recipes',
+    collection: 'recipes'
   }
-);
+)
 
-RecipeSchema.plugin(timestamps);
+RecipeSchema.plugin(timestamps)
 
-RecipeSchema.index({ createdAt: 1, updatedAt: 1 });
+RecipeSchema.index({ createdAt: 1, updatedAt: 1 })
 
-export const Recipe = mongoose.model('Recipe', RecipeSchema);
-export const RecipeTC = composeWithMongoose(Recipe);
+export const Recipe = mongoose.model('Recipe', RecipeSchema)
+export const RecipeTC = composeWithMongoose(Recipe)
