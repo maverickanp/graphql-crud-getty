@@ -27,6 +27,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
     "graphql": "^14.6.0",
     "graphql-compose": "^7.10.0",
     "graphql-compose-connection": "^6.0.3",
@@ -35,8 +36,7 @@
     "graphql-tools": "^4.0.6",
     "mongoose": "^5.8.11",
     "mongoose-bcrypt": "^1.6.0",
-    "mongoose-timestamp": "^0.6.0",
-    "fs-extra": "^8.1.0"
+    "mongoose-timestamp": "^0.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -48,8 +48,10 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
-  
+    "git-commit-msg-linter": "^2.3.11",
+    "lint-staged": "^10.0.7",
     "nodemon": "^2.0.2",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "standard": "^14.3.1"
   }
 }
